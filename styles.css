@@ -50,16 +50,18 @@
 }
 
 .photo-grid {
-  display: flex;
-  justify-content: center;
-  width: 900px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  gap: 20px;
+  width: 100%;
+  padding: 50px;
 }
 
 .photo-item {
-  height: 300px;
-  width: 300px;
-  border: 1px solid blue;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #DDDDDD;
 }
 
 .content-section{
